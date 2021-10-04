@@ -8,10 +8,11 @@ public class Soal1 {
 		Scanner scan = new Scanner(System.in);
 		s = scan.nextLine(); //membaca string yang diinput
 		scan.close();
-		String[] split = s.replaceAll("^[\\W+\\s+]", "").split("[\\s!,?._'@]+");
+		s = s.trim();
+		String[] split = s.split("[\\s!,?._'@]+");
 		
 		System.out.println(split.length);
-		for(String string : split) {
+		for(String string : split) { //For-Each Loop
 			System.out.println(string);
 		}
 	}
