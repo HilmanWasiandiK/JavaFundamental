@@ -10,6 +10,7 @@ public class MainClass {
 		H.setName(scan.next());
 		System.out.print("Masukkan Kekuatan Pahlawan : ");
 		H.setPower(scan.nextInt());
+		scan.close();
 		System.out.print("\nkondisi Pahlawan : ");
 		System.out.println(H.getCon(H.getPower()));;
 		System.out.println(H.getName() + "(power = " + H.getPower() + ") : " + H.getConSay(0));
