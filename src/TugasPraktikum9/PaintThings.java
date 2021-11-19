@@ -18,6 +18,7 @@ public class PaintThings {
 		bigBall = new Sphere(15);
 		tank = new Cylinder(10, 30);
 		
+		//Menampung pengkomputasian "amount paint needed" untuk setiap objek
 		deckAmt = paint.amount(deck);
 		ballAmt = paint.amount(bigBall);
 		tankAmt = paint.amount(tank);

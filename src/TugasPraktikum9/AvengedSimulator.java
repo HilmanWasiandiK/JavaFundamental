@@ -14,6 +14,7 @@ public class AvengedSimulator {
 		
 		//Menyortir isi List kelas SuperHero. reverseOrder() agar diurutkan secara descending
 		Collections.sort(heroList, Collections.reverseOrder());
+		//Collections.sort(heroList); //jika method compareTo sudah me-return secara descending, maka langsung saja
 		
 		for(SuperHero heroes : heroList) {
 			System.out.println("=============================================================");

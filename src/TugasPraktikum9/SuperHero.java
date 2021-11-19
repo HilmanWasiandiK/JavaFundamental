@@ -39,6 +39,7 @@ abstract class SuperHero implements Comparable<SuperHero> {
 	
 	//method untung menbandingkan powerLevel objek dari kelas SuperHero
 	public int compareTo(SuperHero hero) {
-		return powerLevel - hero.powerLevel;
+		return powerLevel - hero.powerLevel;   //untuk return secara ascending
+		//return hero.powerLevel - powerLevel; //untuk return secara descending
 	}
 }
