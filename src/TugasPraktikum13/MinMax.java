@@ -1,0 +1,32 @@
+package TugasPraktikum13;
+
+interface MinMax<T extends Comparable<T>> {  
+	T max(); /*www.java2s.com*/ 
+} 
+class MyClass<T extends Comparable<T>> implements MinMax<T> {  
+	T[] vals; 
+	
+	MyClass(T[] o) {  
+		vals = o; 
+	} 
+	
+	public T max() {  
+		T v = vals[0]; 
+		for (int i = 1; i < vals.length; i++) {  
+			if (vals[i].compareTo(v) > 0) { 
+				v = vals[i]; 
+			} 
+		} 
+		return v; 
+	} 
+	
+	public T min() {
+		T v = vals[0]; 
+		for (int i = 1; i < vals.length; i++) {  
+			if (vals[i].compareTo(v) < 0) { 
+				v = vals[i]; 
+			} 
+		} 
+		return v; 
+	} 
+} 
